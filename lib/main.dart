@@ -1,4 +1,8 @@
 import 'package:e_commere_api/View/HomePage.dart';
+import 'package:e_commere_api/View/Razopay.dart';
+import 'package:e_commere_api/View/location.dart';
+import 'package:e_commere_api/View/login.dart';
+import 'package:e_commere_api/View/rRegister.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -32,7 +37,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: Login(),
     );
   }
 }

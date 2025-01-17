@@ -1,6 +1,7 @@
 import 'package:e_commere_api/Controller/apiCall.dart';
 import 'package:e_commere_api/Model/ProductsModel.dart';
 import 'package:e_commere_api/View/Detailpage.dart';
+import 'package:e_commere_api/View/UserDetailpage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,25 @@ class _HomePageState extends State<HomePage> {
     ApiCall apiCall = ApiCall();
     return Scaffold(
       appBar: AppBar(title: Text('vary Complex Api,'),
-      backgroundColor: Colors.grey,),
+      actions: [
+        IconButton(
+          icon: Icon(Icons.account_circle), // User icon
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => UserDetailPage(),
+              ),
+            );
+
+            // Handle user icon press (for example, navigate to profile screen)
+            //print("User icon tapped");
+          },
+        ),
+      ],
+      backgroundColor: Colors.grey,
+      ),
+
       body: SafeArea(
 
         child: SingleChildScrollView(

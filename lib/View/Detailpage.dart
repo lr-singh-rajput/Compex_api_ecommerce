@@ -1,4 +1,7 @@
 import 'package:e_commere_api/Model/ProductsModel.dart';
+import 'package:e_commere_api/View/Razopay.dart';
+import 'package:e_commere_api/View/livelocation.dart';
+import 'package:e_commere_api/View/location.dart';
 import 'package:flutter/material.dart';
 
 class Detailpage extends StatelessWidget {
@@ -60,6 +63,51 @@ class Detailpage extends StatelessWidget {
             //   ],
             // ),
               SizedBox(height: 30,),
+
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  // Passing the amount to RazorpayPage
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Razopay(amount: product.price!.toDouble()),
+                    ),
+                  );
+                },
+                child: Text("Proceed to Payment"),
+              ),
+            ),   Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  // Passing the amount to RazorpayPage
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LocationScreen(),
+                    ),
+                  );
+                },
+                child: Text("live location"),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  // Passing the amount to RazorpayPage
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Location(),
+                    ),
+                  );
+                },
+                child: Text("location check"),
+              ),
+            ),
+
+            SizedBox(height: 30,),
+
             Text(
               'Reviews',
               textAlign: TextAlign.center,
@@ -167,6 +215,8 @@ class Detailpage extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
+
+
             Container(
               height: 300,
               child:  ListView.builder(
@@ -212,6 +262,8 @@ class Detailpage extends StatelessWidget {
                     );
                   }),
             ),
+
+
 
 
           ],

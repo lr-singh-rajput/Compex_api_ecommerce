@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "First Post",
+      "content": "This is the first post."
+    },
+    {
+      "id": 2,
+      "title": "Second Post",
+      "content": "This is the second post."
+    },
+    {
+      "title": "upadate data",
+      "content": "update description",
+      "id": "eb78"
+    },
+    {
+      "id": "eaa0",
+      "title": "new data add",
+      "content": "check new data add"
+    },
+    {
+      "id": "c3c9",
+      "title": "new data add",
+      "content": "check new data add"
+    },
+    {
+      "id": "12c6",
+      "title": "new title",
+      "content": "new description"
+    },
+    {
+      "id": "be6a",
+      "title": "new title",
+      "content": "new description"
+    },
+    {
+      "id": "644b",
+      "title": "new data add",
+      "content": "check new data add"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "banna",
+      "age": 22,
+      "gmail": "banna@gmeil.com"
+    },
+    {
+      "id": 2,
+      "name": "user",
+      "age": 30,
+      "gmail": "user@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "jay",
+      "age": 23,
+      "gmail": "jay@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "raj",
+      "age": 21,
+      "gmail": "raj@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "yash",
+      "age": 25,
+      "gmail": "yash@gmail.com"
+    }
+  ]
+}
